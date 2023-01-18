@@ -1,0 +1,245 @@
+.about{
+    margin-top: 32px;
+
+    &__list{
+        position: relative;
+        @include row;
+
+        &::after {
+            position: absolute;
+            content: '';
+            z-index: 0;
+            display: block;
+            width: 627px;
+            border: 1px solid #393C49;
+            background: #EA7C69;
+            transition: width .3s;
+            margin-top: 49px;
+        }
+    }
+
+    &__item{
+        position: relative;
+        
+        
+        margin-left: 32px;
+        // width: 100px;
+
+        &:nth-child(1){
+            margin-left: 0;
+        }
+        
+    }
+    &__item > button{
+        background: inherit;
+        border: none;
+        padding: 0;
+        @include font(normal, 400, 14px, 140%, #fff);
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #EA7C69;
+            margin-top: 13px;
+            z-index: 1;
+            left: 50%;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: #EA7C69;
+            margin-top: 32.5px;
+            z-index: 1;
+            right: 50%;
+        }
+    }
+
+    &__sorting{
+        @include row;
+        justify-content: space-between;
+        margin-top: 47px;
+    }
+
+    &__title{
+        @include font(normal, 600, 20px, 140%, #fff);
+    }
+
+    &__sort{
+        position: relative;
+    }
+
+    &__select{
+        @include font(normal, 500, 14px, 140%, #fff);
+        width: 100px;
+        height: 48px;
+        padding-left: 35px;
+        background: #1F1D2B;
+        border: 1px solid #393C49;
+        border-radius: 8px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        &:focus{
+            border: 1px solid #fff;
+        }
+       
+    }
+
+    &__arrow{
+        position: absolute;
+        display: inline-block;
+        left: 15px;
+        top: 35%;
+        // transform: ;
+        transform: translateY(-50% );
+        transform: rotate(45deg);
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+        padding: 3px;
+        transition: all 0.6s ease-in-out;
+
+
+    }
+
+    &__arrow--opposite{
+        transform: rotate(225deg);
+        top: 45%;
+    }
+
+    &__wrapper{
+        @include row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 65vh;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: transparent;
+    }
+    
+    &__inner{
+        position: relative;
+        width: 195px;
+        height: 226px;
+        margin-top: 58px;
+        padding: 0 24px;
+        background: #1F1D2B;
+        border-radius: 16px;
+        text-align: center;
+        
+    }
+    
+    &-item__img{
+        position: absolute;
+        width: 132px;
+        height: 132px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -36px;
+        border-radius: 50%;
+    }
+
+    &-item__title{
+        @include font(normal, 500, 14px, 18px, #fff);
+        margin-top: 114px;
+        margin-bottom: 8px;
+
+    }
+    &-item__price{
+        @include font(normal, 400, 14px, 140%, #fff);
+    }
+    &-item__text{
+        @include font(normal, 400, 14px, 140%, #fff);
+        margin-top: 4px;
+    }
+
+    &__loading{
+        width: 15vw;
+        height: 15vw;
+        animation: spin 1s linear infinite;
+        position: absolute;
+        left: 25%;
+        top: 45%;
+    }
+
+    &__circle{
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+        stroke-linecap: round;
+        animation: dash 2.5s ease-in-out infinite;
+    }
+
+}
+.about__loading--none{
+    display: none;
+}
+
+.about__item--active > button{
+    color: #EA7C69;
+
+    &::after {
+        animation: active 0.6s;
+        width: 50%;
+        color: #EA7C69;
+        z-index: 1;
+    }
+    &::before {
+        animation: line 0.6s;
+        width: 50%;
+        color: #EA7C69;
+        z-index: 1;
+        flex-direction: row-reverse ;
+    }
+
+
+}
+@keyframes active{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes line{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
+@keyframes spin{
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes dash{
+    0%{
+        stroke-dasharray: 1 , 150;
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100%{
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}

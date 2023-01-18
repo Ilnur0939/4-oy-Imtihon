@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="visually-hidden">food POS Dark</h1>
+
+    <main>
+
+        <div class="container">
+            <div class="box">
+                <section class="hero">
+                    <div class="hero__box">
+                        <div class="hero__left">
+                            <h3 class="hero__title">Jaeger Resto</h3>
+                            <p class="hero__date"></p>
+                        </div>
+                        <div class="hero__form">
+                            <input class="hero__inp" type="text" placeholder="Search for food, coffe, etc..">
+                            <img class="hero__img" src="./images/search.svg" alt="search icon">
+                        </div>
+                    </div>
+
+                    <div class="about">
+                        <div class="about__box">
+                            <div class="about__nav">
+                                <ul class="about__list">
+                                    <!-- <li class="about__item about__item--active"><button class="about__btn">dadas</button></li>
+                                    <li class="about__item"><button class="about__btn">dasd</button></li>
+                                    <li class="about__item"><button class="about__btn">asdad</button></li>
+                                    <li class="about__item"><button class="about__btn">dad  </button></li>
+                                    <li class="about__item"><button class="about__btn"></button></li>
+                                    <li class="about__item"><button class="about__btn"></button></li> -->
+                                </ul>
+                            </div>
+    
+                            <div class="about__sorting">
+                                <p class="about__title">Choose Dishes</p>
+                                <div class="about__sort">
+                                    <select class="about__select" id="select">
+                                        <option class="about__option" value="1" selected>Dine in</option>
+                                        <option class="about__option" value="2">Price: to lowest</option>
+                                        <option class="about__option" value="3">Price: to highest</option>
+                                    </select>
+                                    <span class="about__arrow"></span>
+                                </div>
+                            </div>
+                            <svg class="about__loading about__loading--none" viewBox="0 0 50 50">
+                                <circle class="about__circle"
+                                    cx="25"
+                                    cy="25"
+                                    r="25"
+                                />
+                            </svg>
+                        </div>
+
+                        <ul class="about__wrapper">
+                            <!-- <li class="about__inner about-item">
+                                <img src="http://localhost:5000/image6.png" alt="" class="about-item__img">
+                                <h4 class="about-item__title">Spicy instant noodle with special omelette</h4>
+                                <u class="about-item__price">$ 2.29</u>
+                                <p class="about-item__text">20 Bowls available</p>
+                            </li> -->
+                        </ul>
+
+                    </div>
+                </section>
+
+                <section class="service">
+                    <div class="service__top">
+                        <p class="service__toptext">Orders #34562</p>
+                        <div class="service__topbutton">
+                            <button class="service__topbtn service__topbtn--active">Dine In</button>
+                            <button class="service__topbtn">To Go</button>
+                            <button class="service__topbtn">Delivery</button>
+                        </div>
+                    </div>
+                    <div class="service__hero">
+                        <p class="service__text">Item</p>
+                        <p class="service__text">Qty</p>
+                        <p class="service__text">Price</p>  
+                    </div>
+
+                    <ul class="service__list">
+                        <!-- <li class="service__item">
+                            <div class="service__inner">
+                                <img id="serviceImg" src="http://localhost:5000/Grill3.1.jfif" alt="" class="service__img">
+                                <div class="service__middle">
+                                    <p class="service__commit">Spicy seasoned sea...</p>
+                                    <u class="service__price">$ 2.29</u>
+                                </div>
+                                <span class="service__count">2</span>
+                                <u class="service__leftprice">$ 4,58</u>
+                            </div>
+                            <div class="service__form">
+                                <input type="text" id="" class="service__inp" placeholder="Order Note...">
+                                <button class="service__btn"><img src="./images/Vector.svg" alt=""></button>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    <div class="service__bottom">
+                        <div class="service__bottomlist">
+                            <p class="service__sub">Sub total</p>
+                            <p class="service__total"> $ 21,03</p>
+                        </div>
+                        <button class="service__submit">Continue to Payment</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./js/active.js"></script>
+    <script src="./js/data.js"></script>
+    
+</body>
+</html>

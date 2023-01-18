@@ -1,4 +1,38 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "Barlow-Medium";
+    src: url("/fonts/Barlow-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Barlow-Medium";
+    src: url("/fonts/Barlow-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    src: url("/fonts/Barlow-Regular.woff") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Barlow-Regular";
+    src: url("/fonts/Barlow-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Barlow-SemiBold";
+    src: url("/fonts/Barlow-Regular.woff") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Barlow-SemiBold";
+    src: url("/fonts/Barlow-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
 }

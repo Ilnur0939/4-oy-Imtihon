@@ -5,10 +5,10 @@
 body{
     margin: 0;
     font-family: $main-font;
-    background-color: $main-background-color;
+    background-color: #252836;
 }
 
-a{
+a , u{
     text-decoration: none;
 }
 
@@ -18,8 +18,13 @@ ul , ol{
     padding: 0;
 }
 
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
 img{
     vertical-align: middle;
+    object-fit: cover;
 }
 
 .visually-hidden{
@@ -30,4 +35,4 @@ img{
     position: absolute;
     white-space: nowrap;
     width: 1px;
-  }
+}

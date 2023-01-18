@@ -1,0 +1,175 @@
+.service{
+    background: #1F1D2B;
+    width: 409px;
+    margin-left: 38px;
+    padding: 24px;
+    &__toptext{
+        @include font(normal, 600, 20px, 140%, #fff);
+    }
+
+    &__topbutton{
+        @include row;
+    }
+
+    &__topbtn{
+        @include font(normal, 600, 14px, 140%, #EA7C69);
+        padding: 7px 12px;
+        background: #1F1D2B;
+        border: 1px solid #393C49;
+        border-radius: 8px;
+        margin-right: 8px;
+        margin-top: 24px;
+    }
+
+    &__topbtn--active{
+        @include font(normal, 600, 14px, 140%, #fff);
+        background: #EA7C69;
+    }
+
+    &__hero{
+        @include row;
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #393C49;
+    }
+
+    &__text{
+        @include font(normal, 600, 16px, 140%, #fff);
+        &:nth-child(2){
+            margin-left: 225px;
+        }
+        &:nth-child(3){
+            margin-left: 43px;
+        }
+    }
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: transparent;
+    }
+
+    &__list{
+        overflow: hidden;
+        overflow-y: auto;
+        height: 47vh;
+    }
+
+
+    &__item{
+        width: 361px;
+        margin-top: 24px;
+    }
+
+    &__inner{
+        @include row;
+    }
+    
+    &__img{
+        width: 45px;
+        height: 41px;
+        border-radius: 50%;
+    }
+
+    &__middle{
+        margin-left: 6px;
+    }
+
+    &__commit{
+        @include font(normal, 500, 14px, 140%, #fff);
+        width: 140px;
+    }
+
+    &__price{
+        @include font(normal, 500, 12px, 140%, #ABBBC2);
+    }
+
+    &__count{
+        @include font(normal, 500, 16px, 140%, #ABBBC2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background: #2D303E;
+        border: 1px solid #393C49;
+        border-radius: 8px;
+        color: #fff;
+        margin-left: 58px;
+    }
+
+    &__leftprice{
+        @include font(normal, 500, 16px, 140%, #ABBBC2);
+        margin-left: 15px;
+    }
+
+    &__form{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    &__inp{
+        @include font(normal, 400, 14px, 140%, #fff);
+        display: flex;
+        align-items: flex-start;
+        width: 297px;
+        height: 48px;
+        background: #2D303E;
+        border: 1px solid #393C49;
+        border-radius: 8px;
+        padding-left: 42px;
+        outline: none;
+        &:focus{
+            border: 1px solid #fff;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #FF7CA3;
+        border-radius: 8px;
+        background: transparent;
+        margin-left: 16px;
+
+    }
+
+    &__bottomlist{
+        @include row;
+        border-top: 1px solid #393C49;
+        padding-top: 25px;
+        justify-content: space-between;
+    }
+
+    &__sub{
+        @include font(normal, 400, 14px, 140%, #ABBBC2);
+    }
+
+    &__total{
+        @include font(normal, 500, 16px, 140%, #fff);
+    }
+
+    &__submit{
+        @include font(normal, 600, 14px, 140%, #fff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 361px;
+        height: 48px;
+        background: #EA7C69;
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+        border-radius: 8px;
+        border: none;
+        margin-top: 25px;
+
+        &:active{
+            background: transparent;
+            border: 1px solid #EA7C69;
+            color: #EA7C69;
+        }
+    }
+
+}

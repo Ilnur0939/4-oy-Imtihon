@@ -1,0 +1,52 @@
+.box{
+    display: flex;
+}
+
+.hero{
+    width: 633px;
+    margin-top: 24px;
+    
+
+
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        color: #fff;
+        @include font(normal, 600, 28px, 140%, #fff);
+    }
+    &__date{
+        @include font(normal, 400, 16px, 140%, #fff);
+        margin-top: 4px;
+    }
+
+    &__form{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__inp{
+        @include font(normal, 400, 14px, 140%, #fff);
+        display: flex;
+        align-items: flex-start;
+        padding: 14px;
+        width: 220px;
+        height: 48px;
+        background: #2D303E;
+        border: 1px solid #393C49;
+        border-radius: 8px;
+        padding-left: 42px;
+        outline: none;
+        &:focus{
+            border: 1px solid #fff;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        left: 16px;
+    }
+}
