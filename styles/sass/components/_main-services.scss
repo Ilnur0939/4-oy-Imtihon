@@ -1,6 +1,7 @@
+
 .service{
     background: #1F1D2B;
-    width: 409px;
+    display: none;
     margin-left: 38px;
     padding: 24px;
     &__toptext{
@@ -28,13 +29,21 @@
 
     &__hero{
         @include row;
+    }
+    
+    &__wrap{
         margin-top: 24px;
-        padding-bottom: 24px;
         border-bottom: 1px solid #393C49;
+        
+    }
+
+    &__result{
+        @include font(normal, 600, 18px, 140%, #fff);
     }
 
     &__text{
         @include font(normal, 600, 16px, 140%, #fff);
+        margin: 0;
         &:nth-child(2){
             margin-left: 225px;
         }
@@ -172,4 +181,8 @@
         }
     }
 
+}
+
+.wrapper-right-active{
+    display: block;
 }
